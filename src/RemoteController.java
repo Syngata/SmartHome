@@ -11,5 +11,7 @@ public class RemoteController {
 		intCom.execute();
 	}
 	
-		
+	public void buttonOffWasPressed() {
+		intCom.undo();
+	}
 }

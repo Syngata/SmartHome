@@ -10,7 +10,12 @@ public class AppClient {
 		
 		rmt.setCommand(lightOnCom);
 		rmt.buttonOnWasPressed();
-				
+		
+		Garage garage= new Garage();
+		GarageDoorCommand gdc= new GarageDoorCommand(garage);
+		rmt.setCommand(gdc);
+		rmt.buttonOnWasPressed();
+		rmt.buttonOffWasPressed();		
 	}
 
 }
